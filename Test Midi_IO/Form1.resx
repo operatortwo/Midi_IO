@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="ToolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="lblHelp_VoiceNote.ToolTip" xml:space="preserve">
+    <value>Use the left mouse-button to play a note
+When focused, the space-bar wil also play a note
+Hold spacebar pressed while movig the note-trackbar with the mouse to play different notes.
+Hold spacebar pressed while selecting different voices with the mousewheel to try different voices.
+</value>
+  </data>
+  <data name="lblHelp_SysxInput.ToolTip" xml:space="preserve">
+    <value>The user can input a sysEx / sysx Message in hexadecimal format.
+It has to start with F0 and has to end with F7.
+Values between need to be separated by one space.
+If the input is valid, the 'send' button will be enabled.
+Copy / paste is enabled.</value>
+  </data>
+  <data name="lblHelp_OutputTextBox.ToolTip" xml:space="preserve">
+    <value>Message sent to the selected Output Port.
+1... is the message number
+[xx xx xx .. .. ..]  Message in hexadecimal format
+--&gt; xxxx.. Return code, if not MMSYSERR_NOERROR.
+--&gt; MMSYSERR_INVALHANDLE - 0   when  no Output 
+Port is selected.     Right-click to clear the textbox.
+</value>
+  </data>
+  <data name="lblHelp_MessageTextbox.ToolTip" xml:space="preserve">
+    <value>Messages sent to the callback procs MidiOut and MidiIn.
+1   The message number
+MOM_OPEN   the message itself
+xxxx  Handle in hexadecimal format
+- 0   user defined value, here port number
+Right-click to clear the textbox.
+
+</value>
+  </data>
+  <data name="lblHelp_InputPort2.ToolTip" xml:space="preserve">
+    <value>Second MIDI-Input Port
+If no port is available, the the comboBox is empty
+Short- and Long Messages received on this input will be
+sent to the selected Output Port.
+Useful for connecting a MIDI Master-Keyboard
+</value>
+  </data>
+  <data name="lblHelp_NotesOnKeyboard.ToolTip" xml:space="preserve">
+    <value>Alphanumeric keys on the keyboard can be used to play voice notes
+Q W E R T ... and  X C V B ... keys for white Piano-keys
+S D G H J and numeric keys for black Piano-keys
+multiple keys can be pressed simultaneously
+</value>
+  </data>
+  <data name="lblHelp_DrumTrackbar.ToolTip" xml:space="preserve">
+    <value>Left mouse button to play / release a drum note.
+When focused: 
+Press spacebar to play / release a drum note.
+Hold spacebar pressed while moving the trackbar
+with mouse or arrow keys to play different drum sounds.
+</value>
+  </data>
+  <data name="lblHelp_NoteTrackbar.ToolTip" xml:space="preserve">
+    <value>Left mouse button to play / release a note.
+When focused: 
+Press spacebar to play / release a note.
+Hold spacebar pressed while moving the trackbar
+with mouse or arrow keys to play different note numbers.</value>
+  </data>
+  <data name="lblHelp_VoiceSelect.ToolTip" xml:space="preserve">
+    <value>Selects the voice for Note output.
+The application resets the voice to 
+'0' (Acoustic Grand Piano) after
+changing the Output port and after GM ON
+When focused: Spacebar to play a note,
+arrow keys to change the voice.</value>
+  </data>
+  <metadata name="ContextMenuStripTbOut.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>116, 17</value>
+  </metadata>
+  <metadata name="ContextMenuStripTbMsg.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>476, 17</value>
+  </metadata>
+  <metadata name="ContextMenuStripTbIn.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>301, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAADw8PCI2NjbBNjY2wTY2NsFra2ubtra2era2tnq2trZ6VFRUqTY2NsE2NjbBPT09u5OT
+        k4e2trZ6tra2epmZmYU6Ojq9NjY2wTY2NsFQUFCtsbGxfLa2tnq2trZ6cnJymDY2NsE2NjbBNjY2wXBw
+        cJm2trZ6tra2era2tnpPT09KTk5OJ11dXcgiIiLnIiIi5yoqKuOmpqar6enpl+np6ZfQ0NCeMTEx3iIi
+        IuciIiLnQkJC1dPT053p6emX6enpl46OjrQiIiLnIiIi5yIiIudxcXG/6enpl+np6Zfp6emXWFhYyiIi
+        IuciIiLnKysr4qysrKnp6emX6enpl4GBgUVOTk4n4+PjmTs7O9kiIiLnIiIi5zk5OdrNzc2f6enpl+np
+        6ZeampqvIiIi5yIiIuciIiLnZWVlxOnp6Zfp6emX6enpl2JiYsUiIiLnIiIi5ycnJ+Senp6u6enpl+np
+        6Zfb29ubNjY23CIiIuciIiLnPDw82NDQ0J7p6emXjY2NQUtLSxGamppMfX19WENDQ35DQ0N+Q0NDflpa
+        WmyamppMmpqaTJqamkxiYmJmQ0NDfkNDQ35DQ0N+b29vXpqamkyamppMmpqaTFBQUHNDQ0N+Q0NDfkxM
+        THaHh4dTmpqaTJqamkx3d3daQ0NDfkNDQ35DQ0N+W1tbapqamkxwcHAgAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        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
+        gAf/D4AH/w8AB/8fAAP/HwAD/58AA/+///8=
+</value>
+  </data>
+</root>
