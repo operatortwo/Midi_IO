@@ -114,4 +114,15 @@ Set the corresponig property to FALSE to receive the message as MidiInData event
 
 Enumeration of the Ports after NEW or RefreshPortList
 
+### Remarks
+Please note that the caller of the _MidiInData_ and _MidiInLongdata_ Events runs in another thread. So, before a UserInterface control can be accessed, 'Invoke' is required, else an
+`<Exception thrown: 'System.InvalidOperationException' in System.Windows.Forms.dll>` appears in the output window of VS. For the user it appears that _nothing happened_ because the Exception was catched in the MidiInProc.
+
+I see no alternative to this behaviour:
+`<RaiseEvent>` in MidiIn **needs** to be surrounded by Try.. Catch to avoid that some wrong code in the EventHandler blocks the MidiInProc callback.
+
+The need for an 'Invoke' is not always obvious. For example, in _Test Midi_IO_ `<ShowHexBytes_Output>` needs no 'Invoke' when the output message is initiated from a button on the form. But when using the second Midi Input, then the incoming message is forwarded to the midi output, and then 'Invoke' **is** required, because the original caller is still MidiIn.
+
+
+
 
