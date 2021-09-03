@@ -122,8 +122,7 @@ Partial Class Form1
         Me.lblHelp_InputPort.Size = New System.Drawing.Size(13, 13)
         Me.lblHelp_InputPort.TabIndex = 65
         Me.lblHelp_InputPort.Text = "?"
-        Me.ToolTip1.SetToolTip(Me.lblHelp_InputPort, "Select the MIDI-Port for Input" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If no device is available, the the comboBox is em" &
-        "pty")
+        Me.ToolTip1.SetToolTip(Me.lblHelp_InputPort, "Select the MIDI-Port for Input" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The comboBox is empty when no port is available")
         '
         'lblHelp_OutputPort
         '
@@ -168,9 +167,9 @@ Partial Class Form1
         Me.lblHelp_IdRequest.Size = New System.Drawing.Size(13, 13)
         Me.lblHelp_IdRequest.TabIndex = 95
         Me.lblHelp_IdRequest.Text = "?"
-        Me.ToolTip1.SetToolTip(Me.lblHelp_IdRequest, "Send ID-Request to the selected Output device." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If the device is capable to respo" &
-        "nd, ID-Reply is sent back. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To receive this message, the corresponding Input de" &
-        "vice" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "has to be selected." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        Me.ToolTip1.SetToolTip(Me.lblHelp_IdRequest, "Send ID-Request to the selected Output Port." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If the device is capable to respond" &
+        ", ID-Reply is sent back. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "To receive this message, the corresponding Input Port" &
+        "" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "has to be selected." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'lblHelp_GmOn
         '
@@ -181,9 +180,9 @@ Partial Class Form1
         Me.lblHelp_GmOn.Size = New System.Drawing.Size(13, 13)
         Me.lblHelp_GmOn.TabIndex = 96
         Me.lblHelp_GmOn.Text = "?"
-        Me.ToolTip1.SetToolTip(Me.lblHelp_GmOn, "Send GM ON to the selected Output device." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If the device is capable, the Geneeral" &
-        " MIDI System is turned on." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The third byte contains the device ID . The value 7F" &
-        " has the" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "meaning 'all devices'.")
+        Me.ToolTip1.SetToolTip(Me.lblHelp_GmOn, "Send GM ON to the selected Output Port." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If the device is capable, the Geneeral M" &
+        "IDI System is turned on." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The third byte contains the device ID . The value 7F h" &
+        "as the" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "meaning 'all devices'.")
         '
         'lblHelp_SysxInput
         '
@@ -320,9 +319,8 @@ Partial Class Form1
         Me.lblHelp_MainVolume.Size = New System.Drawing.Size(13, 13)
         Me.lblHelp_MainVolume.TabIndex = 217
         Me.lblHelp_MainVolume.Text = "?"
-        Me.ToolTip1.SetToolTip(Me.lblHelp_MainVolume, "Set the Main Volume of the connected device." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A volume of '0' means silence." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The" &
-        " application resets the volume to 127" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "after changin the output port and after G" &
-        "M ON." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
+        Me.ToolTip1.SetToolTip(Me.lblHelp_MainVolume, "Set the Main Volume on the selected Output Port." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "A volume of '0' means silence." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The application resets the volume to 127" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "after changin the Output Port and aft" &
+        "er GM ON." & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'cbShowTooltipHelp
         '
@@ -348,7 +346,7 @@ Partial Class Form1
         Me.lblHelp_BulkDumpRequest.Size = New System.Drawing.Size(13, 13)
         Me.lblHelp_BulkDumpRequest.TabIndex = 231
         Me.lblHelp_BulkDumpRequest.Text = "?"
-        Me.ToolTip1.SetToolTip(Me.lblHelp_BulkDumpRequest, "Two different Buld Dump Requests" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "for a certain device (for debugging)")
+        Me.ToolTip1.SetToolTip(Me.lblHelp_BulkDumpRequest, "Two different Bulk Dump Requests" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "for a certain device (for debugging)")
         '
         'lblHelp_RefreshportList
         '
@@ -911,7 +909,7 @@ Partial Class Form1
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Test Midi_IO      V 1.0.0"
+        Me.Text = "Test Midi_IO      V 1.0.1"
         Me.ContextMenuStripTbOut.ResumeLayout(False)
         CType(Me.trkbVoiceNote, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.trkbDrumNote, System.ComponentModel.ISupportInitialize).EndInit()

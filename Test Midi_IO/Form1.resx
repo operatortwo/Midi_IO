@@ -131,6 +131,7 @@ Hold spacebar pressed while selecting different voices with the mousewheel to tr
     <value>The user can input a sysEx / sysx Message in hexadecimal format.
 It has to start with F0 and has to end with F7.
 Values between need to be separated by one space.
+These data bytes can not be &gt; 7f hex = 127 decimal.
 If the input is valid, the 'send' button will be enabled.
 Copy / paste is enabled.</value>
   </data>
