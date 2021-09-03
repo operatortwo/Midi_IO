@@ -11,10 +11,7 @@ Public Class Midi_IO
     ''' </summary>
     ''' <returns></returns>
     Public ReadOnly Property IsRunning As Boolean               ' if true: memory for output is allocated
-    '                                                           ' memory for input is allocated when an
-    '                                                           ' memory for input is allocated when an
-    '                                                           ' Input port is open
-    '                                                           ' shared: allow only 1 instance
+
     ''' <summary>
     ''' Set to FALSE to receive TimingClock
     ''' </summary>
@@ -27,9 +24,6 @@ Public Class Midi_IO
     ''' <returns></returns>
     Public Property MidiIn_filter_ActiveSense As Boolean = True ' for MidiInProc  Real-time message FE
     '                                                           ' every 300 milliseconds
-    '--- removed MidiMapper support
-    'Public Property include_midi_mapper As Boolean = True       'add Midi-Mapper to List of output ports
-
 
     Public last_error_msg As String = "ok"
     Public last_error As Integer = MMSYSERR_NOERROR
@@ -652,7 +646,7 @@ Public Class Midi_IO
     ' The remarks were taken from an example for the IDisposable Interface in the documentation
 
     ' Track whether Dispose has been called
-    Dim disposed As Boolean = False
+    Private disposed As Boolean = False
 
     Public Sub Dispose() Implements IDisposable.Dispose
         Dispose(True)
@@ -681,7 +675,6 @@ Public Class Midi_IO
             End If
             ' dispose unmanaged resources here
             DisposeUnmanagedResources()
-
 
             disposed = True
 
