@@ -122,7 +122,8 @@ Partial Class Form1
         Me.lblHelp_InputPort.Size = New System.Drawing.Size(13, 13)
         Me.lblHelp_InputPort.TabIndex = 65
         Me.lblHelp_InputPort.Text = "?"
-        Me.ToolTip1.SetToolTip(Me.lblHelp_InputPort, "Select the MIDI-Port for Input" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "The comboBox is empty when no port is available")
+        Me.ToolTip1.SetToolTip(Me.lblHelp_InputPort, "Select the MIDI-Port for Input" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "If no port is available, then the comboBox is emp" &
+        "ty" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10))
         '
         'lblHelp_OutputPort
         '
@@ -909,7 +910,7 @@ Partial Class Form1
         Me.HelpButton = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Test Midi_IO      V 1.0.1"
+        Me.Text = "Test Midi_IO      V 1.0.2"
         Me.ContextMenuStripTbOut.ResumeLayout(False)
         CType(Me.trkbVoiceNote, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.trkbDrumNote, System.ComponentModel.ISupportInitialize).EndInit()

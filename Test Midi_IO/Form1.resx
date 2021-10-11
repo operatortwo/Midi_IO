@@ -145,7 +145,7 @@ Port is selected.     Right-click to clear the textbox.
 </value>
   </data>
   <data name="lblHelp_MessageTextbox.ToolTip" xml:space="preserve">
-    <value>Messages sent to the callback procs MidiOut and MidiIn.
+    <value>Messages received by the callback procs MidiOut and MidiIn.
 1   The message number
 MOM_OPEN   the message itself
 xxxx  Handle in hexadecimal format
@@ -156,7 +156,7 @@ Right-click to clear the textbox.
   </data>
   <data name="lblHelp_InputPort2.ToolTip" xml:space="preserve">
     <value>Second MIDI-Input Port
-If no port is available, the the comboBox is empty
+If no port is available, then the comboBox is empty
 Short- and Long Messages received on this input will be
 sent to the selected Output Port.
 Useful for connecting a MIDI Master-Keyboard
