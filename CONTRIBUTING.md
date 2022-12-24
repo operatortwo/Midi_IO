@@ -10,7 +10,4 @@ Was written to test the library. The monitorig functionality is a side effect an
 Playing notes on the computer keyboard is only for testing polyphonic sound. It can not be used for playing songs.
 People who wants to play music should use a Midi master keyboard.
 
----
-Thank you for your attention. 
-Of course I am interested and thankful for bug reports, suggestions, links to other and more complex projects and more around the topics midi, vb .net, programming.
 

@@ -232,9 +232,12 @@
 
     '--- Drums ---
     '
-    ' Drums are on Channel 9
-    ' normally Drums need no Note-off, but in case the device is not in GM mode and there is a normal voice
-    ' on channel 9, do a Note-off for drum-pads too
+    ' Drums are on Channel 9    
+    ' Even if Drum sounds are usually single-shot, it is recommended to send a Note-off too.
+    ' Quote: The MIDI Specification requires that all Note-On commands have a corresponding Note-Off command,
+    ' And it Is assumed that all MIDI transmitters will comply with this requirement) Quote End
+    ' Generally, retriggering a Note that is aready on can affect the sound quality.
+
 
     Friend Sub KbdDrumNoteOn(keycode As Byte)
         If keycode >= 48 AndAlso keycode <= 90 Then
