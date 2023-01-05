@@ -18,8 +18,7 @@ There is
 
 Test application for the Midi_IO library. Can also be used as a simple Midi In/Out monitor in raw hexadecimal format.
 
-![small Test Midi_IO](https://user-images.githubusercontent.com/88147904/131333949-76a5511d-d5ac-4f9f-aa75-04eba167641d.png)
-
+![Medium2 Test Midi_IO](https://user-images.githubusercontent.com/88147904/210873234-d68f61cc-d203-4d49-84e2-2c4f4b94420c.PNG)
 
 
 ### Test Minimum
