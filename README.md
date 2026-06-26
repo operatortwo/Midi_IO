@@ -123,5 +123,18 @@ I see no alternative to this behaviour:
 The need for an 'Invoke' is not always obvious. For example, in _Test Midi_IO_ `<ShowHexBytes_Output>` needs no 'Invoke' when the output message is initiated from a button on the form. But when using the second Midi Input, then the incoming message is forwarded to the midi output, and then 'Invoke' **is** required, because the original caller is still MidiIn.
 
 
+### Known issues
+Since Windows 11 25H2 Build 26200... There is a delay of a few seconds when an application using this library is started for the first time.
+During this delay, the application does not display anything on the screen. If the application is closed and restarted, the application window appears immediately without any noticeable delay.  
+**Reason:** This library was developed for Midi 1.0. The MIDI functions have always been immediately available.  
+With the integration of Midi 2.0 into Windows, the Midi 1.0 functions were also moved to the new system. Midi 2.0 (and therefore now also Midi 1.0) in Windows functions as a  **service** (midisrv) that, by default, is only started when needed. 
+The delay therefore represents the time the MIDI service needs to start. A quick workaround would be to change the start type of the MIDI service from "manual" to "automatic".  
+However, a closer look reveals that the problem lies deeper. The underlying design of the library assumes that the MIDI functions are always immediately available. 
+Therefore, the enumeration of the MIDI ports in the main thread (which is also the UI thread) takes place after Window_Loaded. However, if the system has to wait for the enumeration, the UI thread is blocked and therefore nothing is displayed during this time.
+This means the design would now need to be changed so that the UI thread is no longer blocked, i.e., asynchronously, in a different thread, or using a callback, etc.  
+I probably won't do that, but will leave this project as it is.  
+I plan to write a new Midi-IO 2.0 library sometime in the future that uses the new Midi service but is initially mainly focused on Midi 1.0.
+However, the requirements for using the MIDI service are high, and the library cannot change that; at least Windows 11 26100 and .Net 10 are required.
+
 
 
