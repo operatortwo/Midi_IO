@@ -1,6 +1,6 @@
 ## Midi_IO
 
-Midi_IO is a .Net library for Midi Input/Output based on Windows WINMM.
+Midi_IO is a .NET Framework library for Midi 1.0 - Input/Output based on classic Windows WinMM.
 It simplifies the calls to the C++ style functions in WINMM and handles the required buffers in unmanaged memory.
 
 Midi_IO provides functions and raises events for
